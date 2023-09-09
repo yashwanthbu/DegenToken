@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract DegenToken is ERC20, Ownable {
+contract DegenToken is ERC20, ERC20Burnable, Ownable {
     string public itms="Our in-game items are: 1.Degen Bag 2.Degen Hoodie 3.Degen Eraser 4.Degen Shirt 5.Degen Stickies ";
     constructor() ERC20("Degen", "DGN") {}
 
